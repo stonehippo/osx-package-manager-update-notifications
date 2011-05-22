@@ -5,6 +5,7 @@ These scripts check various package managers for updates and informs you if ther
 
 * [RubyGems](http://rubygems.org) (*gem* command)
 * [HomeBrow](http://mxcl.github.com/homebrew/) (*brew* command)
+* [npm](http://npmjs.org) (*npm* command, version 1.0+)
 
 There scripts are can be invoked with *launchd* to allow them run at startup or on whatever schedule you like.
 
@@ -21,12 +22,12 @@ Installation
 
 Put the scripts somewhere on your system and make the executable.
 
-If you want them to run automatically, use *launchd*. A couple of examples *launchd* configs are includes; you can drop them into ~/Library/LaunchAgents (or /Library/LaunchAgents if you want them to apply to all users on your system). You will need to update the paths to point to wherever you placed the shell scripts.
+If you want them to run automatically, use *launchd*. A few example *launchd* configs are includes; you can drop them into ~/Library/LaunchAgents (or /Library/LaunchAgents if you want them to apply to all users on your system). You will need to update the paths to point to wherever you placed the shell scripts.
 
 Caveats
 -------
 
-Right now, the paths to the package managers (*brew*, *gem*) and *growlnotify* are hardcoded; you may have to edit the scripts to point to the correct location on your system.
+Right now, the paths to the package managers (*brew*, *gem*, *npm*) and *growlnotify* are hardcoded; you may have to edit the scripts to point to the correct location on your system.
 
 Another thing to watch out for is that the *gemupdates.sh* script assumes the system copy of *gem*; I'm not taking into account something like [RVM](http://rvm.beginrescuend.com) here yet.
 
