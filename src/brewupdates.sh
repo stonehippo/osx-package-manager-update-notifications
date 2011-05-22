@@ -1,4 +1,4 @@
-#/usr/bin/bash
+#!/bin/bash
 
 #sleep for a few seconds to give growl a chance to start
 sleep 15
