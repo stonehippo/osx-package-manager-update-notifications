@@ -3,7 +3,7 @@
 #sleep for a few seconds to give growl a chance to start
 sleep 15
 
-TEST=`/usr/local/bin/gem outdated`
+TEST=`gem outdated`
 
 if [[ $TEST != '' ]]; then
   /usr/local/bin/growlnotify -s -n 'gem updater' -m "${TEST}" -t 'gem updates available'
